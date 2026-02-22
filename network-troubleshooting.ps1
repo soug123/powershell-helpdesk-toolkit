@@ -1,11 +1,13 @@
-# Check IP configuration
+# Network Troubleshooting Script
+
+Write-Host "=== Network Information ===" -ForegroundColor Cyan
+
 ipconfig
 
-# Test internet connection
-Test-Connection google.com -Count 4
+Write-Host "`nTesting Internet Connectivity..." -ForegroundColor Yellow
+Test-Connection google.com -Count 2
 
-# Check DNS resolution
+Write-Host "`nDNS Resolution Test:" -ForegroundColor Yellow
 Resolve-DnsName google.com
 
-# View network adapters
 Get-NetAdapter

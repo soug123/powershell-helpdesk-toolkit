@@ -1,11 +1,11 @@
-# Create a new folder
-New-Item -Path "C:\Temp\ITLab" -ItemType Directory
+# File Management Script
 
-# Create a file
-New-Item -Path "C:\Temp\ITLab\report.txt" -ItemType File
+$path = "C:\Temp\HelpDeskLab"
 
-# List files in directory
-Get-ChildItem "C:\Temp\ITLab"
+Write-Host "Creating folder..." -ForegroundColor Cyan
+New-Item -Path $path -ItemType Directory -Force
 
-# Export running services to a text file
-Get-Service | Out-File "C:\Temp\ITLab\services.txt"
+Write-Host "Exporting running services..." -ForegroundColor Yellow
+Get-Service | Out-File "$path\services-report.txt"
+
+Write-Host "Done. Report saved to $path"

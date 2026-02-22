@@ -21,21 +21,6 @@ The toolkit was built in a Windows 10/11 lab environment to practice system diag
 - Structured troubleshooting approach
 
 ---
-
-## 📂 Project Structure
-
-helpdesk-powershell-toolkit/
-│
-├── README.md
-├── scripts/
-│   ├── system-info.ps1
-│   ├── network-troubleshooting.ps1
-│   ├── disk-check.ps1
-│   └── service-report.ps1
-│
-└── screenshots/
-
----
 ## 🧪 How to Run These Scripts
 
 1. Open PowerShell as **Administrator**

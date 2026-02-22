@@ -1,3 +1,23 @@
+# 💻 Help Desk PowerShell Toolkit
+
+## 📌 Project Overview
+
+This repository contains PowerShell scripts simulating Help Desk and Desktop Support tasks on Windows machines.  
+
+Scripts include: system diagnostics, network troubleshooting, and disk space monitoring.
+
+---
+
+## 🧰 Skills Demonstrated
+
+- Windows troubleshooting fundamentals  
+- PowerShell scripting basics  
+- Network connectivity testing  
+- Disk space monitoring  
+
+
+---
+
 ## 🧪 How to Run These Scripts
 
 1. Open PowerShell as **Administrator**

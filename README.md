@@ -43,12 +43,26 @@ helpdesk-powershell-toolkit/
 3. Run each script:
 <img width="884" height="1079" alt="image" src="https://github.com/user-attachments/assets/50e1e5d8-dfe6-4054-9f26-c163e3696754" />
 
-```powershell
-.\system-info.ps1
-.\network-troubleshooting.ps1
-.\disk-check.ps1
-.\service-report.ps1
-In this part of the scrip we will run a system info ps1
+for the system info scrip we will find the OS and CPU useage 
 
-before we start with the scrip let find power shell frist 
-and open it as a admin 
+for step 1 scrip we going to run get-computerinfo to see what active directory we running 
+<img width="1894" height="799" alt="step2_system-info png" src="https://github.com/user-attachments/assets/b9661e80-7860-44f4-9e78-83397f8bed4b" />
+
+step 2 we going to find CPU processes
+we going to set it where it pick the top 5 CPU useage 
+
+<img width="1896" height="871" alt="step3_system-info png" src="https://github.com/user-attachments/assets/018a12a8-f632-4357-864b-737a79e69776" />
+
+now we going to work with network scrip 
+ 1st we going to look for our IP 
+with IPconfig
+<img width="1895" height="769" alt="network 1" src="https://github.com/user-attachments/assets/a36565b9-d96b-4fbb-8f70-1aa9f9ef7f5c" />
+
+ then we going to test out our network by trying to connect to google.com with Resolve-Dnsname it power shell version of nslookup
+ <img width="1895" height="685" alt="network 2" src="https://github.com/user-attachments/assets/a42610cf-af87-4554-9482-44ec5b15360f" />
+
+last we going to check out network adpater see if it disable or enable  and it link speed
+<img width="1894" height="646" alt="network 3" src="https://github.com/user-attachments/assets/850aad3d-d763-41cf-8e9e-9d6fc1e865e9" />
+
+you can enable or disable net adapther with Disable or Enable-Netadapter -name Ethernet
+<img width="1896" height="829" alt="network 4" src="https://github.com/user-attachments/assets/051fa9bf-4ffd-4676-8493-84bc0076ade5" />

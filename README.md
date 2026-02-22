@@ -51,3 +51,12 @@ last we going to check out network adpater see if it disable or enable  and it l
 
 you can enable or disable net adapther with Disable or Enable-Netadapter -name Ethernet
 <img width="1896" height="829" alt="network 4" src="https://github.com/user-attachments/assets/051fa9bf-4ffd-4676-8493-84bc0076ade5" />
+
+
+for the last scrip we going to be testing Disk check
+naming a c drive to disk in powershell
+<img width="1908" height="749" alt="disk" src="https://github.com/user-attachments/assets/8120fada-1e31-447d-a5bb-cf4d4c1cb27b" />
+
+gisking the disk a warning propmt when it low on space or if it healthy 
+<img width="1892" height="704" alt="disk 2" src="https://github.com/user-attachments/assets/5356c015-9a2a-4aa5-9575-3cf527ee6036" />
+

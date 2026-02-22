@@ -21,7 +21,7 @@ Network Troubleshooting Script
 now we going to work with network scrip 
  1st we going to look for our IP 
 with IPconfig
-<img width="1895" height="769" alt="network 1" src="https://github.com/user-attachments/assets/a36565b9-d96b-4fbb-8f70-1aa9f9ef7f5c" />
+<img width="1895" height="769" alt="step3_system-info png" src="https://github.com/user-attachments/assets/a36565b9-d96b-4fbb-8f70-1aa9f9ef7f5c" />
 
  then we going to test out our network by trying to connect to google.com with Resolve-Dnsname it power shell version of nslookup
  <img width="1895" height="685" alt="network 2" src="https://github.com/user-attachments/assets/a42610cf-af87-4554-9482-44ec5b15360f" />

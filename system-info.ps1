@@ -1,21 +1,9 @@
-# Get basic system information
-Get-ComputerInfo
+# System Information Script
 
-# Get operating system info
-Get-CimInstance Win32_OperatingSystem
+Write-Host "=== System Information ===" -ForegroundColor Cyan
 
-# Check current user
+Get-ComputerInfo | Select-Object WindowsProductName, WindowsVersion
 whoami
 
-# List running processes
-Get-Process | Sort-Object CPU -Descending | Select-Object -First 10# Get basic system information
-Get-ComputerInfo
-
-# Get operating system info
-Get-CimInstance Win32_OperatingSystem
-
-# Check current user
-whoami
-
-# List running processes
-Get-Process | Sort-Object CPU -Descending | Select-Object -First 10
+Write-Host "`nTop 5 CPU Processes:" -ForegroundColor Yellow
+Get-Process | Sort-Object CPU -Descending | Select-Object -First 5

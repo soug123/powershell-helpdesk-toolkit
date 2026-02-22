@@ -3,6 +3,7 @@
 1. Open PowerShell as **Administrator**
 2. Navigate to the `scripts/` folder
 3. Run each script:
+   System Information Script
 <img width="884" height="1079" alt="image" src="https://github.com/user-attachments/assets/50e1e5d8-dfe6-4054-9f26-c163e3696754" />
 
 for the system info scrip we will find the OS and CPU useage 
@@ -15,6 +16,8 @@ we going to set it where it pick the top 5 CPU useage
 
 <img width="1896" height="871" alt="step3_system-info png" src="https://github.com/user-attachments/assets/018a12a8-f632-4357-864b-737a79e69776" />
 
+
+Network Troubleshooting Script
 now we going to work with network scrip 
  1st we going to look for our IP 
 with IPconfig
@@ -29,7 +32,7 @@ last we going to check out network adpater see if it disable or enable  and it l
 you can enable or disable net adapther with Disable or Enable-Netadapter -name Ethernet
 <img width="1896" height="829" alt="network 4" src="https://github.com/user-attachments/assets/051fa9bf-4ffd-4676-8493-84bc0076ade5" />
 
-
+Disk Space Check Script
 for the last scrip we going to be testing Disk check
 naming a c drive to disk in powershell
 <img width="1908" height="749" alt="disk" src="https://github.com/user-attachments/assets/8120fada-1e31-447d-a5bb-cf4d4c1cb27b" />

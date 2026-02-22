@@ -36,7 +36,18 @@ helpdesk-powershell-toolkit/
 └── screenshots/
 
 ---
+## 🧪 How to Run These Scripts
 
+1. Open PowerShell as **Administrator**
+2. Navigate to the `scripts/` folder
+3. Run each script:
+<img width="884" height="1079" alt="image" src="https://github.com/user-attachments/assets/50e1e5d8-dfe6-4054-9f26-c163e3696754" />
+
+```powershell
+.\system-info.ps1
+.\network-troubleshooting.ps1
+.\disk-check.ps1
+.\service-report.ps1
 In this part of the scrip we will run a system info ps1
 
 before we start with the scrip let find power shell frist 

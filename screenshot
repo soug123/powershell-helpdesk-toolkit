@@ -1,0 +1,10 @@
+helpdesk-powershell-toolkit/
+│
+├── README.md
+├── scripts/
+│ ├── system-info.ps1
+│ ├── network-troubleshooting.ps1
+│ ├── disk-check.ps1
+│ └── service-report.ps1
+│
+└── screenshots/

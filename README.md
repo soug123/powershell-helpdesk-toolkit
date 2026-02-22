@@ -37,64 +37,48 @@ helpdesk-powershell-toolkit/
 
 ---
 
-## 🔎 Script Use Cases
+## 🖥 Step‑by‑Step Execution With Screenshots
 
-### 🔹 system-info.ps1
-Used to quickly gather system and OS details during remote support sessions.
+### 🔹 Step 1: Run System Info Script
+This gathers OS, user, and process information.
 
-### 🔹 network-troubleshooting.ps1
-Simulates troubleshooting a user reporting “No Internet Connection.”
-
-Checks:
-- IP configuration
-- DNS resolution
-- Connectivity status
-- Network adapter state
-
-### 🔹 disk-check.ps1
-Identifies low disk space issues that may cause:
-- Slow performance
-- Windows update failures
-- Application crashes
-
-### 🔹 service-report.ps1
-Exports running services to a report file for documentation or escalation.
+![System Info Output](screenshots/step1_system-info.png)
 
 ---
 
-## 🎯 Real-World Scenarios Simulated
+### 🔹 Step 2: Run Network Troubleshooting Script
+This checks connectivity and adapter status.
 
-- User reports slow computer
-- User cannot access internet
-- Application not launching
-- System running out of disk space
-- Need to gather system info for ticket documentation
+![Network Troubleshooting Output](screenshots/step2_network-troubleshooting.png)
+
+---
+
+### 🔹 Step 3: Run Disk Space Check
+This verifies disk usage and shows alerts.
+
+![Disk Check Output](screenshots/step3_disk-check.png)
+
+---
+
+### 🔹 Step 4: Run Service Report Export
+This exports services to a text file.
+
+![Service Report Output](screenshots/step4_service-report.png)
 
 ---
 
 ## 🚀 Why This Project Matters
 
-PowerShell is widely used in corporate Windows environments for troubleshooting and automation.
+PowerShell is widely used in Windows environments for troubleshooting and automation.
 
-This project demonstrates:
-
-- Hands-on Windows troubleshooting skills
-- Ability to automate repetitive support tasks
-- Comfort working in command-line environments
-- Understanding of common Help Desk workflows
+This project demonstrates hands‑on skills relevant to Help Desk and Desktop Support roles.
 
 ---
 
 ## 🧠 Technologies Used
 
-- Windows 10/11
+- Windows 10/11  
 - Windows PowerShell
-
----
-
-## 📸 Screenshots
-
-/screenshot
 
 
 <img width="1892" height="704" alt="disk 2" src="https://github.com/user-attachments/assets/7255d622-55e9-4210-8cfd-e488f2a92934" />

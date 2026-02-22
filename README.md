@@ -31,6 +31,7 @@ Step 1: System Information Script
 Purpose: Gather OS version, current user, and running processes.
 
 Run: system-info.ps1
+
 Expected Output: Displays OS version, username, and top processes.
 <img width="1894" height="799" alt="step2_system-info png" src="https://github.com/user-attachments/assets/b9661e80-7860-44f4-9e78-83397f8bed4b" />
 
@@ -42,6 +43,7 @@ Step 2: Network Troubleshooting Script
 Purpose: Check IP settings, DNS, connectivity, and adapter status.
 
 Run:network-troubleshooting.ps1
+
 Expected Output: Shows IP config, ping results, DNS status, and network adapter details.
 <img width="1895" height="769" alt="step3_system-info png" src="https://github.com/user-attachments/assets/a36565b9-d96b-4fbb-8f70-1aa9f9ef7f5c" />
 
@@ -59,6 +61,7 @@ Step 3: Disk Space Check Script
 Purpose: Monitor disk usage and alert if free space is low.
 
 Run: disk-check.ps1
+
 Expected Output: Shows free space percentage and warnings if disk space is below 20%.
 <img width="1908" height="749" alt="disk" src="https://github.com/user-attachments/assets/8120fada-1e31-447d-a5bb-cf4d4c1cb27b" />
 

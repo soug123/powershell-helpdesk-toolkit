@@ -6,21 +6,23 @@
    System Information Script
 <img width="884" height="1079" alt="image" src="https://github.com/user-attachments/assets/50e1e5d8-dfe6-4054-9f26-c163e3696754" />
 
-for the system info scrip we will find the OS and CPU useage 
+Step 1: System Information Script
 
-for step 1 scrip we going to run get-computerinfo to see what active directory we running 
+Purpose: Gather OS version, current user, and running processes.
+
+Run: system-info.ps1
+Expected Output: Displays OS version, username, and top processes.
 <img width="1894" height="799" alt="step2_system-info png" src="https://github.com/user-attachments/assets/b9661e80-7860-44f4-9e78-83397f8bed4b" />
-
-step 2 we going to find CPU processes
-we going to set it where it pick the top 5 CPU useage 
 
 <img width="1896" height="871" alt="step3_system-info png" src="https://github.com/user-attachments/assets/018a12a8-f632-4357-864b-737a79e69776" />
 
 
-Network Troubleshooting Script
-now we going to work with network scrip 
- 1st we going to look for our IP 
-with IPconfig
+Step 2: Network Troubleshooting Script
+
+Purpose: Check IP settings, DNS, connectivity, and adapter status.
+
+Run:network-troubleshooting.ps1
+Expected Output: Shows IP config, ping results, DNS status, and network adapter details.
 <img width="1895" height="769" alt="step3_system-info png" src="https://github.com/user-attachments/assets/a36565b9-d96b-4fbb-8f70-1aa9f9ef7f5c" />
 
  then we going to test out our network by trying to connect to google.com with Resolve-Dnsname it power shell version of nslookup
@@ -32,11 +34,14 @@ last we going to check out network adpater see if it disable or enable  and it l
 you can enable or disable net adapther with Disable or Enable-Netadapter -name Ethernet
 <img width="1896" height="829" alt="network 4" src="https://github.com/user-attachments/assets/051fa9bf-4ffd-4676-8493-84bc0076ade5" />
 
-Disk Space Check Script
-for the last scrip we going to be testing Disk check
-naming a c drive to disk in powershell
+Step 3: Disk Space Check Script
+
+Purpose: Monitor disk usage and alert if free space is low.
+
+Run: disk-check.ps1
+Expected Output: Shows free space percentage and warnings if disk space is below 20%.
 <img width="1908" height="749" alt="disk" src="https://github.com/user-attachments/assets/8120fada-1e31-447d-a5bb-cf4d4c1cb27b" />
 
-gisking the disk a warning propmt when it low on space or if it healthy 
+checking the disk a warning propmt when it low on space or if it healthy 
 <img width="1892" height="704" alt="disk 2" src="https://github.com/user-attachments/assets/5356c015-9a2a-4aa5-9575-3cf527ee6036" />
 

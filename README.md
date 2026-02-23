@@ -1,70 +1,188 @@
-# 💻 Help Desk PowerShell Toolkit
+🛠 PowerShell Helpdesk Toolkit (Beginner Friendly)
+📌 Project Overview
 
-## 📌 Project Overview
+This project is a beginner-friendly PowerShell Helpdesk Toolkit that simulates real-world IT support tasks.
 
-This repository contains PowerShell scripts simulating Help Desk and Desktop Support tasks on Windows machines.  
+I created this project while preparing for entry-level IT roles and building hands-on experience beyond my CompTIA A+ knowledge.
 
-Scripts include: system diagnostics, network troubleshooting, and disk space monitoring.
+The goal is to practice common Help Desk troubleshooting tasks using PowerShell.
 
----
+🎯 What This Project Covers
 
-## 🧰 Skills Demonstrated
+This toolkit includes scripts that perform:
 
-- Windows troubleshooting fundamentals  
-- PowerShell scripting basics  
-- Network connectivity testing  
-- Disk space monitoring  
+✅ System Information Collection
+
+✅ Network Troubleshooting
+
+✅ Disk Space Checks
+
+✅ Windows Service Reports
+
+These are tasks commonly performed in:
+
+Help Desk
+
+IT Support
+
+Service Desk
+
+Junior System Administrator roles
+
+💻 Lab Requirements
+
+Before starting, make sure you have:
+
+A Windows 10 or Windows 11 computer
+
+PowerShell (already installed on Windows)
+
+Administrator access (recommended)
+
+🚀 Step-by-Step Setup Guide (Exactly How I Did It)
+
+🔹 Step 1: Open PowerShell
+
+Press Windows + X
+
+Click Windows PowerShell or Terminal
+
+Run as Administrator (recommended)
+
+<img width="914" height="1122" alt="image" src="https://github.com/user-attachments/assets/f7e717ce-e988-4a7c-a8f0-ef87507d8463" />
 
 
----
+🔹 Step 2: Script 1 – System Information
 
-## 🧪 How to Run These Scripts
+Create a file called:
 
-1. Open PowerShell as **Administrator**
-2. Navigate to the `scripts/` folder
-3. Run each script:
-   System Information Script
-<img width="884" height="1079" alt="image" src="https://github.com/user-attachments/assets/50e1e5d8-dfe6-4054-9f26-c163e3696754" />
+1_system-info.ps1
 
-Step 1: System Information Script
-
-Purpose: Gather OS version, current user, and running processes.
-
-Run: system-info.ps1
-
-Expected Output: Displays OS version, username, and top processes.
-<img width="1894" height="799" alt="step2_system-info png" src="https://github.com/user-attachments/assets/b9661e80-7860-44f4-9e78-83397f8bed4b" />
-
-<img width="1896" height="871" alt="step3_system-info png" src="https://github.com/user-attachments/assets/018a12a8-f632-4357-864b-737a79e69776" />
+<img width="1924" height="1372" alt="step1_system-info png" src="https://github.com/user-attachments/assets/1f89d633-f935-47ea-adee-207278cb5649" />
 
 
-Step 2: Network Troubleshooting Script
 
-Purpose: Check IP settings, DNS, connectivity, and adapter status.
+Get-ComputerInfo | Out-File "system-info.txt"
+▶ What This Does:
 
-Run:network-troubleshooting.ps1
+Collects detailed system information
 
-Expected Output: Shows IP config, ping results, DNS status, and network adapter details.
-<img width="1895" height="769" alt="step3_system-info png" src="https://github.com/user-attachments/assets/a36565b9-d96b-4fbb-8f70-1aa9f9ef7f5c" />
+Saves it into a text file
 
- then we going to test out our network by trying to connect to google.com with Resolve-Dnsname it power shell version of nslookup
- <img width="1895" height="685" alt="network 2" src="https://github.com/user-attachments/assets/a42610cf-af87-4554-9482-44ec5b15360f" />
+This simulates gathering system data for a ticket
 
-last we going to check out network adpater see if it disable or enable  and it link speed
-<img width="1894" height="646" alt="network 3" src="https://github.com/user-attachments/assets/850aad3d-d763-41cf-8e9e-9d6fc1e865e9" />
+Run it:
+<img width="1894" height="799" alt="step2_system-info png" src="https://github.com/user-attachments/assets/be68d94d-98c5-4d15-b307-b9c6b2dfc6fc" />
+<img width="1896" height="871" alt="step3_system-info png" src="https://github.com/user-attachments/assets/181d0d55-6569-4e17-8c23-3a2b31f3446f" />
 
-you can enable or disable net adapther with Disable or Enable-Netadapter -name Ethernet
-<img width="1896" height="829" alt="network 4" src="https://github.com/user-attachments/assets/051fa9bf-4ffd-4676-8493-84bc0076ade5" />
+.\1_system-info.ps1
 
-Step 3: Disk Space Check Script
+You will now see system-info.txt inside your folder.
 
-Purpose: Monitor disk usage and alert if free space is low.
+🔹 Step 3: Script 2 – Network Troubleshooting
 
-Run: disk-check.ps1
+Create:
 
-Expected Output: Shows free space percentage and warnings if disk space is below 20%.
-<img width="1908" height="749" alt="disk" src="https://github.com/user-attachments/assets/8120fada-1e31-447d-a5bb-cf4d4c1cb27b" />
+2_network-troubleshooting.ps1
 
-checking the disk a warning propmt when it low on space or if it healthy 
-<img width="1892" height="704" alt="disk 2" src="https://github.com/user-attachments/assets/5356c015-9a2a-4aa5-9575-3cf527ee6036" />
+Paste:
+
+ipconfig /all | Out-File "network-info.txt"
+
+Resolve-DnsName google.com | Out-File -Append "network-info.txt"
+
+Test-Connection google.com -Count 2 | Out-File -Append "network-info.txt"
+
+▶ What This Does:
+<img width="1895" height="769" alt="network 1" src="https://github.com/user-attachments/assets/d3c7f0ac-f03e-4bf4-808f-9e7dda5b5f38" />
+<img width="1895" height="685" alt="network 2" src="https://github.com/user-attachments/assets/896efe3e-e1cd-4771-9074-9bb16ea00944" />
+<img width="1894" height="646" alt="network 3" src="https://github.com/user-attachments/assets/9828a664-c0d8-421f-8116-20a7ebbee5a3" />
+
+
+
+Checks IP configuration
+
+Tests DNS resolution
+
+Pings Google
+
+Saves results to a file
+
+Run:
+
+.\2_network-troubleshooting.ps1
+
+This simulates troubleshooting “No Internet” tickets.
+
+🔹 Step 4: Script 3 – Disk Space Check
+
+Create:
+
+3_disk-check.ps1
+
+
+
+$disk = Get-PSDrive C
+$total = $disk.Used + $disk.Free
+$freePercent = ($disk.Free / $total) * 100
+
+"Free Space Percentage: $freePercent %" | Out-File "disk-report.txt"
+
+▶ What This Does:
+<img width="1908" height="749" alt="disk" src="https://github.com/user-attachments/assets/57aaf2ab-886d-4cec-b380-cdea1425db53" />
+<img width="1892" height="704" alt="disk 2" src="https://github.com/user-attachments/assets/7de0ef95-05d7-4299-9e5e-cea8520bf914" />
+
+
+
+Checks C: drive
+
+Calculates free space %
+
+Saves results
+
+This simulates “User cannot install software” tickets.
+
+🧠 What I Learned
+
+How to use basic PowerShell commands
+
+How to redirect output to files
+
+How to simulate real help desk troubleshooting
+
+How to structure scripts clearly for documentation
+
+💼 Why This Project Matters
+
+This project demonstrates:
+
+Hands-on PowerShell experience
+
+Troubleshooting mindset
+
+Basic scripting automation
+
+Real-world IT support simulation
+
+It shows that I can:
+
+Investigate system issues
+
+Gather diagnostic data
+
+Document findings
+
+Use command-line tools effectively
+
+🔄 Future Improvements
+
+Add error handling
+
+Add logging timestamps
+
+Create a combined “All-in-One” script
+
+Export reports to CSV
+
+Add screenshots for documentation
 
